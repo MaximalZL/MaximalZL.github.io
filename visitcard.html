@@ -52,55 +52,16 @@
                 opacity: 1;
               }
 
-              #text__button
-              {
-                  font-family: 'Dancing Script', cursive;
-                  font-size: 40px;
-                  text-align: center;
-                  padding-top: 40px;
-                  color: #72694a;
-                  text-decoration: none;
-
-                  cursor: pointer;
-                  transition: color .2s linear;
-              }
-
-              #text__button:after
-              {
-                  opacity: 0;
-                  transition: opacity .2s linear;
-              }
-
-              #text__button:hover
-              {
-                  color: transparent;
-              }
-
-              #text__button:hover:after
-              {
-                  opacity: 1;
-              }
-
-              #logo
-              {
-                  height: 218px;
-                  width: 218px;
-                  border-radius: 218px;
-              }
-
-              @media (min-width: 218px)
-              {
-                  #logo
-                  {
-                      height: 218 px;
-                      width: 218px;
-                  }
-              }
-
               #mask
               {
-                  font-family: 'Lemonada', cursive;
+                  font-family: 'Bookman Old Style', bold;
                   font-size: 48px;
+              }
+
+              #text__inbolck
+              {
+                  font-family: 'Bookman Old Style', cursive;
+                  font-size: 20px;
               }
             </style>
 
@@ -135,17 +96,20 @@
               class="p-5 text-center bg-image"
               style="background-image: url('assets/images/background.jpg')"
             >
-              <div style="background-color: rgba(0, 0, 0, 0.7)">
                 <div class="d-flex justify-content-center align-items-center h-100">
-                  <div class="text-white">
-                    <h1 class="mask" id="mask">Welcome to WebSite!</h1>
-                    <h5 id="mask">You can find information about Zigmund Freid here</h5>
-                    <a href="VisitCard.html" class="btn btn-info" role="button" id="logo" style="background-image: url('assets/images/logo.png')">
-                      <p class="text__button" id="text__button">Zigmund Freid</p>
-                    </a>
+                  <div lang="ru" class="text-black">
+                    <div class="card" style="width:400px">
+                        <img class="card-img-top" src="assets/images/photo_card.jpg" alt="Card image">
+                        <div class="card-body">
+                          <h4 class="card-title">Зигмунд Фрейд</h4>
+                            <p class="card-text">Австрийский психолог, психоаналитик, невролог и психиатр Зигмунд Фрейд стал уже легендой. 
+                              Именно его исследования и выводы и в XIX веке и сейчас продолжают будоражить умы научных деятелей и врачей современности.
+                            </p>
+                          <a href="biography.html" class="btn btn-primary">Читать больше</a>
+                        </div>
+                      </div>
                   </div>
                 </div>
-              </div>
             </div>
           </header>
     </body>

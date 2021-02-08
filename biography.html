@@ -52,55 +52,22 @@
                 opacity: 1;
               }
 
-              #text__button
-              {
-                  font-family: 'Dancing Script', cursive;
-                  font-size: 40px;
-                  text-align: center;
-                  padding-top: 40px;
-                  color: #72694a;
-                  text-decoration: none;
-
-                  cursor: pointer;
-                  transition: color .2s linear;
-              }
-
-              #text__button:after
-              {
-                  opacity: 0;
-                  transition: opacity .2s linear;
-              }
-
-              #text__button:hover
-              {
-                  color: transparent;
-              }
-
-              #text__button:hover:after
-              {
-                  opacity: 1;
-              }
-
-              #logo
-              {
-                  height: 218px;
-                  width: 218px;
-                  border-radius: 218px;
-              }
-
-              @media (min-width: 218px)
-              {
-                  #logo
-                  {
-                      height: 218 px;
-                      width: 218px;
-                  }
-              }
-
               #mask
               {
-                  font-family: 'Lemonada', cursive;
+                  font-family: 'Bookman Old Style', bold;
                   font-size: 48px;
+              }
+
+              #text__inbolck
+              {
+                  font-family: 'Bookman Old Style', cursive;
+                  font-size: 20px;
+              }
+
+              #text__file
+              {
+                  color: #fff;
+                  font-size: 28px;
               }
             </style>
 
@@ -135,17 +102,33 @@
               class="p-5 text-center bg-image"
               style="background-image: url('assets/images/background.jpg')"
             >
-              <div style="background-color: rgba(0, 0, 0, 0.7)">
-                <div class="d-flex justify-content-center align-items-center h-100">
-                  <div class="text-white">
-                    <h1 class="mask" id="mask">Welcome to WebSite!</h1>
-                    <h5 id="mask">You can find information about Zigmund Freid here</h5>
-                    <a href="VisitCard.html" class="btn btn-info" role="button" id="logo" style="background-image: url('assets/images/logo.png')">
-                      <p class="text__button" id="text__button">Zigmund Freid</p>
-                    </a>
-                  </div>
+                <div style="background-color: rgba(255, 255, 255, 0.7)">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                    <div class="text-black">
+                        <div class="card-body">
+                            <div style="font-family: 'Bookman Old Style', cursive;">
+                                <h1 class="card-title">Зигмунд Фрейд</h1>
+                                <h4 class="card-title">Рождение и Юность</h4>
+                                <p class="card-text">
+                                    <iframe src="assets/text/birth.txt" width="1200vh" height="200px"></iframe>
+                                </p>
+                                <h4 id="card-title">Психотерапия и анализ</h4>
+                                <p id="card-text">
+                                    <iframe src="assets/text/psyhoterapia.txt" width="1200vh"></iframe>
+                                </p>
+                                <h4 id="card-title">Личная жизнь</h4>
+                                <p id="card-text">
+                                    <iframe src="assets/text/private.txt" width="1200vh"></iframe>
+                                </p>
+                                <h4 id="card-title">Смерть</h4>
+                                <p id="card-text">
+                                    <iframe src="assets/text/death.txt" width="1200vh"></iframe>
+                                </p>
+                            </div>
+                          </div>
+                    </div>
+                    </div>
                 </div>
-              </div>
             </div>
           </header>
     </body>
